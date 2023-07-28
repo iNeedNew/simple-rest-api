@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+    web-server:
+        container_name: web-server
+        image: nginx:1.21.1
+        volumes:
+            - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+            - ./public/:/var/www/public/
+        ports:
+            - "2000:80"
+        depends_on:
+            - app
+
+    app:
+        container_name: app
+        build:
+            context: .
+            dockerfile: docker/app/Dockerfile
+        volumes:
+            - ./:/var/www/
+            - ./docker/app/custom.ini:/usr/local/etc/php/conf.d/custom.ini

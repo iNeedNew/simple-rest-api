@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "title-1",
+    "location_id": 2
+  },
+  {
+    "id": 2,
+    "title": "title-1",
+    "location_id": 2
+  },
+  {
+    "id": 3,
+    "title": "title-2",
+    "location_id": 3
+  },
+  {
+    "id": 4,
+    "title": "title-3",
+    "location_id": 2
+  },
+  {
+    "id": 5,
+    "title": "title-4",
+    "location_id": 1
+  },
+  {
+    "id": 6,
+    "title": "title-5",
+    "location_id": 3
+  }
+]
