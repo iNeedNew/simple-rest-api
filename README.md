@@ -31,6 +31,20 @@ docker-compose up -d
 docker exec -it app composer update
 ~~~
 
+To use the api go to `localhost:2000` (default setting)
+
+If the answer is
+
+`{
+"status": "ok",
+"data": {
+"text": "Api is work!"
+}
+}` 
+
+you have successfully configured your mini-rest api service!
+
+
 ### Resources
 
 Return tree structure location and calculate count use vacancies
